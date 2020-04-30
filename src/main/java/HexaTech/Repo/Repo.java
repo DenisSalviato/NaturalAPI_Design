@@ -32,6 +32,23 @@ public class Repo implements iRepo {
         }
 
     }
+
+    public void ritornaPathOfBDL() throws IOException {
+        String temp=fileSystem.importPathOfBDL();
+        if(!temp.equalsIgnoreCase("")) {
+            lista.add(temp);
+            saveBDL();
+        }
+
+    }
+
+    public void saveBDL() throws IOException {
+        StringBuilder temp= new StringBuilder();
+        for(String stringa: lista)
+            temp.append(stringa).append("\n");
+        this.fileSystem.salvaDoc(temp.toString(), ".\\tempBDL.txt");
+    }
+
     public void salvaDocumento() throws IOException {
         StringBuilder temp= new StringBuilder();
         for(String stringa: lista)

@@ -1,5 +1,7 @@
 package HexaTech.Interactor;
 
+import java.io.IOException;
+
 public interface AddBDLInputPort {
-    void addBussinessDomainLanguage();
+    void addBussinessDomainLanguage() throws IOException;
 }

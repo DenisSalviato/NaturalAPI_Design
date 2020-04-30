@@ -4,6 +4,8 @@ import HexaTech.Interactor.AddBDLInputPort;
 import HexaTech.Interactor.AddGherkinInputPort;
 import HexaTech.Interactor.CreateBALInputPort;
 
+import java.io.IOException;
+
 
 public class Controller {
     AddBDLInputPort addBdl;
@@ -16,7 +18,7 @@ public class Controller {
         createBAL=crBAL;
     }
 
-    public void addBDLController() {
+    public void addBDLController() throws IOException {
         addBdl.addBussinessDomainLanguage();
     }
 

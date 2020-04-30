@@ -21,7 +21,7 @@ public class mainDesign {
         Repo repo=new Repo(fileS);
         Stanford nlp=new Stanford();
         Model model=new Model(nlp);
-        AddBDL bidiel=new AddBDL(presenter);
+        AddBDL bidiel=new AddBDL(presenter,repo);
         AddGherkin gherkin=new AddGherkin(presenter);
         CreateBAL bal=new CreateBAL(presenter);
         Controller controller=new Controller(bidiel,gherkin,bal);

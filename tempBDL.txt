@@ -1,0 +1,3 @@
+C:\Users\Eduard\Desktop\DISCOWer\BDLverbs.json
+C:\Users\Eduard\Desktop\DISCOWer\BDLsost.json
+C:\Users\Eduard\Desktop\DISCOWer\BDLpred.json

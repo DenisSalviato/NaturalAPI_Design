@@ -8,6 +8,8 @@ import java.util.List;
 public interface iRepo {
     void ritornaPath() throws IOException;
 
+    void ritornaPathOfBDL() throws IOException;
+
     void salvaDocumento() throws IOException;
 
     void caricaBackUp() throws IOException;

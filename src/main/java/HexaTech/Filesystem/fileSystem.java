@@ -18,6 +18,18 @@ public class fileSystem implements iFileSystem{
         }else
             return "";
     }
+
+    public String importPathOfBDL(){
+        JFileChooser chooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("File Json", "json");
+        chooser.setFileFilter(filter);
+        int returnVal = chooser.showOpenDialog(null);
+        if(returnVal == JFileChooser.APPROVE_OPTION){
+            return chooser.getSelectedFile().getAbsolutePath();
+        }else
+            return "";
+    }
+
     public  String getContenutoFromPath(String path) throws IOException {
             File file = new File(path);
 
