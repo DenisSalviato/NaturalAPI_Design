@@ -1,9 +1,10 @@
 package HexaTech.Stanford;
 
 import HexaTech.entities.DoubleToken;
+import HexaTech.entities.Gherkin;
 
 import java.util.List;
 
 public interface iStanford {
-    List<DoubleToken> extract(String text);
+   Gherkin extract(String text);
 }

@@ -22,7 +22,7 @@ public class Controller {
         addBdl.addBussinessDomainLanguage();
     }
 
-    public void addGherkinController() {
+    public void addGherkinController() throws IOException {
         addGherkin.addFeature();
     }
 

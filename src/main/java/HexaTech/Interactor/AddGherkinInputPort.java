@@ -1,5 +1,7 @@
 package HexaTech.Interactor;
 
+import java.io.IOException;
+
 public interface AddGherkinInputPort {
-    void addFeature();
+    void addFeature() throws IOException;
 }

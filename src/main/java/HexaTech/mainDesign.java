@@ -22,7 +22,7 @@ public class mainDesign {
         Stanford nlp=new Stanford();
         Model model=new Model(nlp);
         AddBDL bidiel=new AddBDL(presenter,repo);
-        AddGherkin gherkin=new AddGherkin(presenter);
+        AddGherkin gherkin=new AddGherkin(presenter,repo,model);
         CreateBAL bal=new CreateBAL(presenter);
         Controller controller=new Controller(bidiel,gherkin,bal);
         CLI cliente=new CLI(controller,presenter);

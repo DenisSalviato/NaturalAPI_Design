@@ -1,6 +1,7 @@
 package HexaTech.Repo;
 
 import HexaTech.Filesystem.iFileSystem;
+import HexaTech.entities.BALjSon;
 import HexaTech.entities.BDL;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
@@ -89,6 +90,11 @@ public class Repo implements iRepo {
         BDL BDLtoGet=new BDL(sost,verb,preds);
         System.out.println(BDLtoGet.toString());
     }
-
+    public String getGherkinFromContentPath() throws IOException{
+        return fileSystem.getContenutoFromPath(".\\gherkin.txt");
+    }
+    public void saveBALinJSon(BALjSon bal) throws IOException {
+        fileSystem.salvaDoc(bal.BALToJson(),".\\BAL.json");
+    }
 
 }

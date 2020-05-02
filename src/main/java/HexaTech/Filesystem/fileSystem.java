@@ -70,4 +70,7 @@ public class fileSystem implements iFileSystem{
         File temp=new File(doc);
         return temp.delete();
     }
+    public void createjSon(){
+
+    }
 }

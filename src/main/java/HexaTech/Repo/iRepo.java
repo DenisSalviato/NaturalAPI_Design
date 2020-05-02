@@ -1,5 +1,6 @@
 package HexaTech.Repo;
 
+import HexaTech.entities.BALjSon;
 import HexaTech.entities.BDL;
 
 import java.io.IOException;
@@ -21,4 +22,8 @@ public interface iRepo {
     String returnContentFromTxt(String path) throws IOException;
 
     void salvaBDL(BDL bdl) throws IOException;
+
+    String getGherkinFromContentPath() throws IOException;
+
+    void saveBALinJSon(BALjSon bal) throws IOException;
 }

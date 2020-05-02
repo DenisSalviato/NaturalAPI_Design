@@ -3,6 +3,7 @@ package HexaTech.Model;
 import HexaTech.Stanford.iStanford;
 import HexaTech.entities.BDL;
 import HexaTech.entities.DoubleToken;
+import HexaTech.entities.Gherkin;
 
 import java.util.List;
 
@@ -15,11 +16,15 @@ public class Model implements iModel{
     @Override
     public BDL estrai(String text) {
         BDL bidiel=new BDL();
-        List<DoubleToken> result = nlp.extract(text);
-        this.addSost(result,bidiel);
-        this.addVerb(result,bidiel);
-        this.addPred(result,bidiel);
+        //List<DoubleToken> result = nlp.extract(text);
+        //this.addSost(result,bidiel);
+        //this.addVerb(result,bidiel);
+        //this.addPred(result,bidiel);
         return bidiel;
+    }
+
+    public void provaGherkin(String text){
+        Gherkin gherk = nlp.extract(text);
     }
 
     public void addSost(List<DoubleToken> list, BDL bidiel){
@@ -40,5 +45,8 @@ public class Model implements iModel{
                 bidiel.aggiungiPred(d.getLemma(),1);
         }
     }
+
+
+
 
 }
